@@ -58,7 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="PageObjects\ObjectRepository.cs" />
+    <Compile Include="PageObjects\WikiMainPage.cs" />
+    <Compile Include="WikiPageObjectTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
