@@ -29,6 +29,7 @@ namespace Selenium_Test
         {
 
             mainPage.InData();
+        
         }
         
         [TestCleanup]

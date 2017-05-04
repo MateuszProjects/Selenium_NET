@@ -37,8 +37,9 @@ namespace Selenium_Test.PageObjects
 
         public void InData()
         {  
-             driver.FindElement(By.PartialLinkText("Dyskusja")).Click();
+             driver.FindElement(ObjectRepository.MainPage.DaneWiki).Click();
         }
+
 
     }
 }

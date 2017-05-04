@@ -13,6 +13,7 @@ namespace Selenium_Test.PageObjects
         {
             public const string WelcomeText = "Witaj w Wikipedii,";
             public static By WelcomTextId = By.Id("main-page-welcome");
+            public static By DaneWiki = By.PartialLinkText("Dyskusja");
             public static string MainPageUrl = "https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna";
         }
     }
