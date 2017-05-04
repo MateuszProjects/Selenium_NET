@@ -8,6 +8,7 @@ namespace Selenium_Test
     public class WikiPageObjectTests
     {
         WikiMainPage mainPage;
+
         [TestInitialize]
         public void TestInitilize()
         {
@@ -15,17 +16,25 @@ namespace Selenium_Test
             mainPage.LoadPage();
         }
 
-        [TestCleanup]
-        public void TestCleanup()
-        {
-            mainPage.Close();
-        }
 
         [TestMethod]
         public void ShouldLoadHomePageWhenClickOnLogo()
         {
 
             Assert.IsTrue(mainPage.IsPageLoaded());
+        }
+
+        [TestMethod]
+        public void ClickInLink()
+        {
+
+            mainPage.InData();
+        }
+        
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            mainPage.Close();
         }
     }
 }

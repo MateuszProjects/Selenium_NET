@@ -34,5 +34,11 @@ namespace Selenium_Test.PageObjects
             var WikiEx = driver.FindElement(ObjectRepository.MainPage.WelcomTextId);
             return WikiEx.Text.Contains(ObjectRepository.MainPage.WelcomeText);
         }
+
+        public void InData()
+        {  
+             driver.FindElement(By.PartialLinkText("Dyskusja")).Click();
+        }
+
     }
 }
