@@ -41,6 +41,8 @@ namespace Selenium_Test.PageObjects
              driver.FindElement(ObjectRepository.MainPage.DaneWiki).Click();
              IWebElement searchBox = driver.FindElement(ObjectRepository.MainPage.DaneSearch);
              searchBox.SendKeys("Software");
+             IWebElement clickOnSearch = driver.FindElement(ObjectRepository.MainPage.searchButton);
+             clickOnSearch.Click();
              Thread.Sleep(5000);
 
         }
