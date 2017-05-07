@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Selenium_Test.PageObjects
@@ -11,7 +12,7 @@ namespace Selenium_Test.PageObjects
     class WikiMainPage
     {
         public IWebDriver driver;
-
+        
 
         public WikiMainPage()
         {
@@ -38,8 +39,10 @@ namespace Selenium_Test.PageObjects
         public void InData()
         {  
              driver.FindElement(ObjectRepository.MainPage.DaneWiki).Click();
-            driver.FindElement(ObjectRepository.MainPage.DaneSearch).Clear();
-        
+             IWebElement searchBox = driver.FindElement(ObjectRepository.MainPage.DaneSearch);
+             searchBox.SendKeys("Software");
+             Thread.Sleep(5000);
+
         }
 
 
