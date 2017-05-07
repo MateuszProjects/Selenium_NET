@@ -38,7 +38,7 @@ namespace Selenium_Test.PageObjects
         public void InData()
         {  
              driver.FindElement(ObjectRepository.MainPage.DaneWiki).Click();
-           // driver.FindElement(ObjectRepository.MainPage.DaneSearch).Click();
+              driver.FindElement(ObjectRepository.MainPage.DaneSearch).Click();
         
         }
 
