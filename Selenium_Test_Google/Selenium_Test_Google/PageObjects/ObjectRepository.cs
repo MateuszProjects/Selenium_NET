@@ -11,6 +11,7 @@ namespace Selenium_Test_Google.PageObjects
         public class MainPage
         {
             public const string CheckText = "Gmail";
+            public const string writingText = "KrollOntrack";
             public static string MainPageUrl = "https://www.google.pl/?gws_rd=ssl";
         }
     }
